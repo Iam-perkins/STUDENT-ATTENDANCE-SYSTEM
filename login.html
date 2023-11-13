@@ -9,6 +9,7 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
+<form action="login.php" method="post"></form>
 <div class="form-wrap">
 		<div class="tabs">
 			<h3 class="signup-tab"><a class="active" href="./signup.html">Sign Up</a></h3>
@@ -18,10 +19,10 @@
 		<div class="tabs-content">
 			<div id="signup-tab-content" class="active">
 				<form class="signup-form" action="" method="post">
-					<input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
-					<input type="text" class="input" id="user_name" autocomplete="off" placeholder="Username">
-					<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
-					<input type="submit" class="button" value="Sign Up">
+					<input type="email" class="input" id="user_email" autocomplete="off" placeholder="Email" name="email">
+					<input type="text" class="input" id="user_name" autocomplete="off" placeholder="Surname"  name="surname">
+					<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password" name="password">
+					<input type="submit" class="button" value="Login" name="check">
 				</form><!--.login-form-->
 				<div class="help-text">
 					<a href="#">forgot password</a>
@@ -31,7 +32,7 @@
 			</div><!--.signup-tab-content-->
 
 			<div id="login-tab-content">
-				<form class="login-form" action="" method="post">
+				<form class="login-form" action="login.php" method="post">
 					<input type="text" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
 					<input type="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
 					<input type="checkbox" class="checkbox" id="remember_me">
